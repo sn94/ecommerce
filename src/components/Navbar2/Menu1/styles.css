@@ -1,0 +1,26 @@
+ .navbar-menu1 .menu-item {
+     @apply mx-0;
+ }
+ 
+ .navbar-menu1 li.menu-item>a {
+     @apply text-white;
+ }
+ 
+ .navbar-menu1 li.menu-item>a:hover {
+     background-color: theme("colors.accent-color");
+     @apply rounded;
+ }
+ 
+ .navbar-menu1 li.menu-item.dropdown>a {
+     background-color: var(--neutral-color2);
+     @apply font-semibold;
+     @apply text-white;
+     @apply mx-0;
+     @apply w-full;
+     @apply block;
+ }
+ 
+ .navbar-menu1 ul.sub-menu-item {
+     background-color: theme("backgroundColor.neutral-color1");
+     @apply rounded-b;
+ }

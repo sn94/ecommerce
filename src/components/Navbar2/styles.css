@@ -1,0 +1,4 @@
+ .main-menu {
+     background-color: theme("backgroundColor.primary");
+     @apply p-2;
+ }

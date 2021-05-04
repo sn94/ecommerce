@@ -1,38 +1,27 @@
-.App {
-  text-align: center;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/** Definir la paleta de colores **/
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+:root {
+    /**Primary color **/
+    --primary-color: #B02C33;
+    /**neutral colors. Se obtienen del primario, modificar saturacion y brillo **/
+    --neutral-color1: rgba(179, 77, 82, 1);
+    --neutral-color2: rgba(114, 49, 52, 1);
+    --neutral-color3: rgba(131, 32, 37, 1);
+    --neutral-color4: rgba(222, 53, 62, 1);
+    /**Accent color: para boton principal, barra de progreso, focos de campo
+    complementario split-complementario analogo **/
+    --accent-color: #20834c;
+    /**Semantic color:  informacion,  alerta,  exito   , aviso. Modificar solo el tono, no tanto la saturacion y brillo**/
+    /**Rojo: alerta */
+    --alert-color: #a93a32;
+    /** Verde: exito */
+    --success-color: #5ca932;
+    /*Amarillo alerta, precaucion*/
+    --warning-color: #8d802a;
+    /** Azul : informacion */
+    --info-color: #403c7c;
 }

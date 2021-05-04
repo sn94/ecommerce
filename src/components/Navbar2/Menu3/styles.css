@@ -1,0 +1,14 @@
+.navbar-menu3 a {
+    @apply text-white;
+}
+
+.navbar-menu3 li.menu-item>a:hover {
+    background-color: theme("colors.accent-color");
+    @apply rounded;
+}
+
+.navbar-menu3 ul.sub-menu-item {
+    @apply mt-1;
+    background-color: theme("backgroundColor.neutral-color1");
+    @apply rounded-b;
+}

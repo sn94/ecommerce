@@ -1,0 +1,7 @@
+.navbar-menu2 .menu-item {
+    @apply px-2;
+}
+
+.navbar-menu2 .menu-item a {
+    @apply text-white;
+}
