@@ -1,0 +1,17 @@
+.product-item {
+    @apply flex flex-col justify-between p-1;
+}
+
+.product-item .titulo {
+    @apply text-sm;
+}
+
+.product-item .imagen {
+    @apply w-full h-48;
+}
+
+.product-item .precio {
+    background-color: theme("colors.accent-color");
+    @apply text-white;
+    @apply font-semibold text-center;
+}

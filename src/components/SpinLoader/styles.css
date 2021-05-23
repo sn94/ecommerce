@@ -1,0 +1,34 @@
+.spin-loader {
+    width: 100px;
+    height: 100px;
+    @apply rounded-full;
+    @apply absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.spin-loader span {
+    @apply absolute text-lg;
+    bottom: 50%;
+}
+
+.spin-loader .canvas {
+    animation: spin 1s linear infinite;
+}
+
+.spin-loader [class*=ball] {
+    width: 30px;
+    height: 30px;
+    @apply rounded-full;
+    @apply absolute;
+}
+
+.spin-loader .ball-1 {
+    background-color: theme("colors.neutral-color1");
+    top: 25%;
+}
+
+.spin-loader .ball-2 {
+    background-color: theme("colors.neutral-color2");
+    left: 50%;
+}

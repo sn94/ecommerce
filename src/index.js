@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
+import store from './DataRedux/Store';
+import { Provider } from 'react-redux';
+
 import reportWebVitals from './reportWebVitals';
 
+// 1 injectar el store a la aplicacion
+//2 conectar el store a la aplicacion
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store} >
+      <App />
+    </Provider>
+ ,
   document.getElementById('root')
 );
 

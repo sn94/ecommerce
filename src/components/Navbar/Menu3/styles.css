@@ -1,0 +1,44 @@
+.navbar-menu3 a {
+    @apply text-white;
+}
+
+.navbar-menu3 div.sub-menu-item {
+    background-color: theme("colors.neutral-color3");
+    border: 1px solid theme("colors.neutral-color1");
+}
+
+
+/*Hover effects **/
+
+.navbar-menu3 ul li.menu-item {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border-bottom: 1px solid theme("colors.neutral-color4");
+    @apply mt-2;
+}
+
+.navbar-menu3 ul li.menu-item::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: -1;
+    transition-property: left;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    left: -100%;
+    transform: skewX(35deg);
+}
+
+.navbar-menu3 ul li.menu-item:hover::before {
+    background-color: theme("colors.neutral-color1");
+    left: 0%;
+}
+
+.navbar-menu3 ul.sub-menu-item {
+    @apply mt-1;
+    background-color: theme("backgroundColor.neutral-color1");
+    @apply rounded-b;
+}

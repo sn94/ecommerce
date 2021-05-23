@@ -1,0 +1,25 @@
+.product-category-item {
+    @apply h-48;
+}
+
+.product-category-item a {
+    @apply flex flex-col h-full block w-full;
+}
+
+.product-category-item:hover {
+    border: 3px solid theme("colors.primary");
+    @apply rounded;
+    box-shadow: 0 0 0 7px theme("colors.primary"), 0 0 10px theme("colors.neutral-color1");
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transform: scale(1.2);
+}
+
+.product-category-item a img {
+    @apply h-full;
+}
+
+.product-category-item a h3 {
+    @apply font-semibold text-center;
+}

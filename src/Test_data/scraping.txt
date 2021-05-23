@@ -1,0 +1,18 @@
+
+Array.from( document.querySelectorAll("img")).forEach( nodo=>  nodo.loading="" );
+var target_= document.querySelectorAll("div.product-inner");
+
+var datos= Array.from( target_);
+
+var mapeados= datos.map( (nodo)=>{
+  
+  let imagen= nodo.querySelector(".mf-product-thumbnail a img").src;
+  let detalle= nodo.querySelector(".mf-product-details-hover");
+  let titulo= detalle.querySelector("h2 a").textContent;
+  let precio=detalle.querySelector(".price bdi").textContent;
+  let vendedor= detalle.querySelector(".sold-by-meta a").textContent;
+  
+  return  { categoria: "Apple", title: titulo, price: precio, img: imagen, vendedor: vendedor};
+});
+
+console.log( JSON.stringify( mapeados));

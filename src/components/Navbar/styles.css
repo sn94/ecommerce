@@ -1,0 +1,4 @@
+ .navbar {
+     background-color: theme("backgroundColor.primary");
+     @apply p-3;
+ }

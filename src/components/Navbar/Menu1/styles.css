@@ -1,0 +1,50 @@
+ .navbar-menu1 .menu-item {
+     @apply mx-0;
+ }
+ 
+ .navbar-menu1 div {
+     background-color: theme("colors.neutral-color3");
+     border: 1px solid theme("colors.neutral-color1");
+ }
+ 
+ .navbar-menu1 ul li.menu-item {
+     @apply relative mt-2;
+     z-index: 1;
+     overflow: hidden;
+     border-bottom: 1px solid theme("colors.neutral-color4");
+ }
+ 
+ .navbar-menu1 li.menu-item>a {
+     @apply text-white;
+ }
+ /**Efectos hover **/
+ 
+ .navbar-menu1 ul li.menu-item:not(.dropdown)::before {
+     content: '';
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background-color: transparent;
+     z-index: -1;
+     transition-property: left;
+     transition-duration: 0.5s;
+     transition-timing-function: linear;
+     left: -100%;
+     transform: skewX(35deg);
+ }
+ 
+ .navbar-menu1 ul li.menu-item:not(.dropdown):hover::before {
+     background-color: theme("colors.neutral-color1");
+     left: 0%;
+ }
+ 
+ .navbar-menu1 li.menu-item.dropdown>a {
+     @apply font-semibold flex flex-row items-center;
+     @apply text-white;
+     @apply mx-0;
+     @apply w-full;
+ }
+ 
+ .navbar-menu1 ul.sub-menu-item {
+     @apply rounded-b rounded-b px-2;
+ }
